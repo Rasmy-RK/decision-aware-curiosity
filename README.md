@@ -128,6 +128,15 @@ These are not necessarily equivalent.
 
 A curiosity mechanism may successfully encourage exploration without improving the agent's actual decisions.
 
+### Important Experimental Limitation
+
+In Experiment 2B, the environment allowed the agent to investigate relevant information, but the acquired information was not explicitly revealed through the agent's state representation. Therefore, the agent could not fully use the acquired information when making the final LEFT/RIGHT decision.
+
+This is an important limitation of the experiment rather than evidence that decision-aware exploration is ineffective. The result instead highlights a key requirement for information-seeking agents: acquiring useful information is not sufficient; the information must also be represented, integrated into the agent's belief state, and used to improve subsequent decisions.
+
+This observation motivates future work using explicit belief-state representations and Bayesian or model-based reinforcement learning.
+
+
 ## Limitations
 
 Several limitations remain.
@@ -187,3 +196,13 @@ Instead, the experiments demonstrate a more fundamental result:
 The negative experimental results therefore motivate a future shift from simple intrinsic-reward design toward integrated **belief representation, information valuation, and decision making**.
 
 This provides a foundation for further investigation into flexible learning and uncertainty-driven behavior in reinforcement learning systems.
+
+## Reproducibility
+
+The experiments were implemented in Python and repeated across multiple random seeds.
+
+* Experiment 1: 5 random seeds
+* Experiments 2, 2A, and 2B: 10 random seeds
+* Results are reported as averages across the corresponding seeds.
+* Each experiment contains separate environment, agent, curiosity, training, and evaluation files.
+* Generated plots and numerical results are available in the `results/` directory.
