@@ -1,0 +1,11 @@
+Experiment,Method,Average Reward,Success Rate,Relevant Probes,Irrelevant Probes
+Experiment 1,Baseline,-18.34,97.00,,
+Experiment 1,Prediction Curiosity,-12.17,99.00,,
+Experiment 1,Decision-Aware,-19.68,97.00,,
+Experiment 2,Baseline,-0.86,49.02,272.6,158.9
+Experiment 2,Prediction Curiosity,-3.98,0.88,1807.5,172.7
+Experiment 2,Decision-Aware,-1.49,40.98,613.7,236.7
+Experiment 2A,Baseline,-0.78,49.98,200.0,189.9
+Experiment 2A,Decision-Aware,-1.52,48.88,400.0,290.2
+Experiment 2B,Baseline,-1.20,49.52,700,400
+Experiment 2B,Decision-Aware,-1.83,44.87,600,600
